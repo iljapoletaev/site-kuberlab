@@ -27,7 +27,7 @@
     color: #ffffff;
     }
 
-    .theme-dark a {
+    .theme-dark * {
     color: #ffffff;
     }
 
@@ -70,13 +70,9 @@
     font-size: 18px;
     }
 
-    header .menu-botton {
-    display: none;
-    }
-
-    footer {
-    height: 170px;
-    }
+    /*header .menu-botton {*/
+    /*display: none;*/
+    /*}*/
 
     .primary {
     color: #ffb955;
@@ -101,7 +97,7 @@
     }
 
     #home {
-        background: url(/img/bg_home.png) bottom center no-repeat;
+        background: url(../img/bg_home.png) bottom center no-repeat;
     }
     #home h3 {
      font-size: 30px;
@@ -210,6 +206,94 @@
         font-size: 200%;
         color: #32bcff;
     }
+
+    footer {
+        margin-top: 20px;
+        height: 210px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    footer .block {
+        background-color: #333333;
+        height: 125px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    footer .top {
+        min-width: 1920px;
+        position: absolute;
+        bottom: 125px;
+        left: calc(50% - 960px);
+        content: '';
+        font-size: 0;
+        font-height: 0;
+        width: 0;
+        height: 0;
+        border-left: 960px solid transparent;
+        border-right: 960px solid transparent;
+        border-bottom: 60px solid #333333;
+    }
+
+
+    .navbar .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    .navbar .menu {
+    display: none!important;
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+
+    padding-bottom: 1em;
+    }
+
+    .navbar .menu li {
+    margin-left: 0em;
+    }
+
+    .navbar .menu li a {
+    display: block;
+    padding-top: 0.5em  ;
+    padding-bottom: 0.5em  ;
+    }
+
+    .navbar .menu.open {
+    display: flex!important;
+    }
+
+    .navbar .menu-botton {
+        cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    }
+
+    .theme-dark .menu-botton:focus{
+    box-shadow: none;
+    }
+
+    .theme-dark .menu-botton svg{
+    fill: #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*.navbar {*/
@@ -363,18 +447,7 @@
     /*background-color: #6f8fa1;*/
     /*border-color: #6f8fa1;*/
 /*}*/
-/*.theme-dark .menu-botton {*/
-    /*background-color: transparent;*/
-    /*padding: 0;*/
-/*}*/
-/*.theme-dark .menu-botton:focus{*/
-    /*box-shadow: none;*/
-/*}*/
 
-
-/*.theme-dark .menu-botton svg{*/
-    /*fill: #fff;*/
-/*}*/
 
 /*!* ------ END COLORS  ------ *!*/
 
@@ -530,3 +603,4 @@
 /*#multi-cloud .title .logo .select{*/
     /*color: #8fd8ff;*/
 /*}*/
+
