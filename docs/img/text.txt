@@ -1,0 +1,5 @@
+<h3>Kuberlab Enables AI Application <span class="select">Developmentfrom Research to Production</span></h3>
+
+<div>Kuberlab's platform for Enterprise AI development and deployment can be implemented in the cloud or on-premise. This platform contains all the tools and automation required for the AI workflow from inception to operation.</div>
+<div>We provide an extensive catalog of pre-trained models and templates that can be used as a starting point for AI application development. </div>
+<div>Our solution facilitates collaboration between data science, development, and operations teams by allowing them to work together in the same environment regardless of local or cloud deployments.</div>

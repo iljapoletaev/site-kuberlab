@@ -1,0 +1,25 @@
+{{ "<!-- Navigation -->" | safeHTML }}
+
+
+<nav class="navbar">
+  <div class="container d-flex flex-row justify-content-between">
+    <div class="logo">
+      kuber<span class="select">lab</span>
+    </div>
+
+    <ul class="menu d-flex flex-row justify-content-between" >
+      <li>
+        <a class="page-scroll" href="#home">{{ with .Site.Params.navigation.home }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+        <a class="page-scroll" href="#product">{{ with .Site.Params.navigation.product }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+        <a class="page-scroll" href="#resource">{{ with .Site.Params.navigation.recource }}{{ . }}{{ end }}</a>
+      </li>
+      <li>
+        <a class="page-scroll" href="{{ .Site.Params.loginUrl }}">{{ with .Site.Params.navigation.login }}{{ . }}{{ end }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

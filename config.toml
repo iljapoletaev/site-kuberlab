@@ -1,0 +1,28 @@
+baseURL = "http:kuberlab.com"
+languageCode = "en-us"
+title = "KuberLab"
+theme = "kuberlab"
+newContentEditor = "nano"
+pygmentsStyle = "native"
+
+publishDir = "docs"
+
+
+
+[params]
+    loginUrl = "https://go.kuberlab.io"
+    [params.navigation]
+        home = "Home"
+        product = "Product"
+        recource = "Resources"
+        login = "Log in"
+
+    [params.home]
+        enable = true
+        title = "Home"
+    #    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.product]
+        enable = true
+        title = "Product"
+    #    subtitle = "Lorem ipsum dolor sit amet consectetur."

@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+
+    .index section {
+        padding: 150px 0;
+    }
+
+    .navbar .menu {
+        display: flex!important;
+        position: static;
+        width: auto;
+        padding-bottom: 0;
+    }
+
+    .navbar .menu li {
+        margin-left: 2em;
+        padding: 0;
+
+    }
+
+    .navbar .menu li a {
+        padding:0;
+    }
+
+    .navbar .menu-botton{
+        display: none
+    }
+
+
+    #product .item {
+        width: 45%;
+    }
+
+    #deployment .step{
+        width: 14%;
+    }
+
+    #deployment .babel.title{
+        height: 6em;
+    }
+
+    #deployment .babel.content{
+        margin-left: 0;
+    }
+
+    #deployment .babel.content p {
+        margin-bottom: 1em;
+    }
+
+
+    #deployment .babel ul {
+        margin-bottom: 0px;
+        width: 30%;
+    }
+
+    #multi-cloud .item {
+        width: 240px;
+        padding: 1em;
+        margin: 0 3em;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+
+}
