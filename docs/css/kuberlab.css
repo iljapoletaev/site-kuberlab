@@ -1,8 +1,17 @@
 
     *, ::before, ::after {
-    font-family: Roboto, Helvetica, sans-serif!important;
-    font-weight: inherit!important;
-    color: #333333;
+    /*font-family: Roboto, Helvetica, sans-serif!important;*/
+    /*font-weight: inherit!important;*/
+        font-family: 'Open Sans', sans-serif;
+        color: #333333;
+    }
+
+    ul {
+        padding-left: 1em;
+    }
+
+    h4 {
+        font-weight: 700;
     }
 
     body {
@@ -12,9 +21,15 @@
         padding: 0;
     }
 
+    .index section h3 {
+        /*padding-bottom: 1em;*/
+    }
+
+
+
     .index section .container{
-        padding-top: 130px;
-        padding-bottom: 130px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .f-s {
@@ -44,9 +59,6 @@
     left: 0;
     width: 100%;
     }
-    /*header .container {*/
-    /*height: 100%;*/
-    /*}*/
 
     header nav{
     padding: 0;
@@ -79,11 +91,13 @@
     }
 
     .btn-primary {
-    color: #ffffff;
-    background-color: #ffb955;
-    border-color: #ffb955;
-     border-radius: 5px;
-     box-shadow: 0 0 0 0px rgba(255, 185, 85, 0.5);
+        color: #ffffff;
+        background-color: #ffb955;
+        border-color: #ffb955;
+        border-radius: 5px;
+        box-shadow: 0 0 0 0px rgba(255, 185, 85, 0.5);
+        padding: 1em 3em;
+        font-size: 20px;
     }
 
     .btn-primary:hover {
@@ -100,7 +114,11 @@
         background: url(../img/bg_home.png) bottom center no-repeat;
     }
     #home h3 {
-     font-size: 30px;
+     font-size: 20px;
+        margin-bottom: 2em;
+    }
+    #home p {
+        padding-bottom: 1em;
     }
 
     #home .select {
@@ -139,7 +157,16 @@
     }
 
     #product .item {
-        padding: 60px 0;
+        padding: 40px 0;
+    }
+
+    #product .item ul{
+        margin-bottom: 0;
+    }
+
+    #product hr {
+        border-color: #ffffff;
+        margin: 0 2em;
     }
 
     #product .item .img img{
@@ -149,16 +176,18 @@
 
     #deployment h3{
         text-align: center;
+        margin-bottom: 1.5em;
     }
 
-    #deployment .step {
-        /*width: 300px;*/
+    #deployment .item {
+        width: 300px;
         padding: 15px;
         background-color: #f5f5f5;
         margin: 0 1em;
+        height: 270px;
     }
 
-    #deployment .step .title {
+    #deployment #deploymentScroll .item .title {
         background-color: #32bcff;
         color: #fff;
         text-align: center;
@@ -168,10 +197,10 @@
         position: relative;
         margin-bottom: 30px;
         padding: 1em;
-        width: 300px;
+        width: 100%;
     }
 
-    #deployment .step .title:after {
+    #deployment #deploymentScroll .item .title:after {
         content: '';
         font-size: 0;
         font-height:0;
@@ -284,8 +313,73 @@
     }
 
 
+    #workflow {
+        background: url(../img/workflow-bg.jpg) bottom center no-repeat;
+    }
+
+    #workflow * {
+        text-align: center;
+    }
+
+    #workflow p {
+        padding-top: 2em;
+    }
+
+    #workflow .babel{
+        background-color: rgba(91, 155, 171, 0.5);
+        border-radius: 30px;
+        padding: 40px 15px
+    }
+
+    #workflow .babel img {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    #deployment i {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        margin: 0 10px -5px 0;
+    }
+
+    #deployment .stepsPoint ul {
+        list-style: none;
+    }
+
+    #deployment .stepsPoint ul li {
+        padding: 0.5em 0;
+        margin-left: 48px;
+    }
+
+    #deployment .stepsPoint ul li i {
+        margin-left: -48px;
+    }
 
 
+    i.i-w1 {
+        background-image: url(../img/icons/w-1.png);
+    }
+i.i-w2 {
+        background-image: url(../img/icons/w-2.png);
+    }
+i.i-w3 {
+        background-image: url(../img/icons/w-3.png);
+    }
+i.i-w4 {
+        background-image: url(../img/icons/w-4.png);
+    }
+i.i-w5 {
+        background-image: url(../img/icons/w-5.png);
+    }
+i.i-w6 {
+        background-image: url(../img/icons/w-6.png);
+    }
 
 
 

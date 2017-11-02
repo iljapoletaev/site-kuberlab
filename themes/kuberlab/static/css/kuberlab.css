@@ -28,8 +28,8 @@
 
 
     .index section .container{
-        padding-top: 130px;
-        padding-bottom: 130px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .f-s {
@@ -114,7 +114,7 @@
         background: url(../img/bg_home.png) bottom center no-repeat;
     }
     #home h3 {
-     font-size: 30px;
+     font-size: 20px;
         margin-bottom: 2em;
     }
     #home p {
@@ -334,6 +334,7 @@
     #workflow .babel img {
         margin: auto;
         display: block;
+        max-width: 100%;
     }
 
     #deployment i {

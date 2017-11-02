@@ -1,8 +1,26 @@
+@media (min-width: 576px) {
+
+    .index section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #home h3 {
+        font-size: 24px;
+    }
+}
+
+
 @media (min-width: 768px) {
 
-    /*.index section {*/
-        /*padding: 150px 0;*/
-    /*}*/
+    #home h3 {
+        font-size: 30px;
+    }
+
+    .index section .container{
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 
     .navbar .menu {
         display: flex!important;
