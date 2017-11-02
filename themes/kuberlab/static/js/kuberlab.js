@@ -18,6 +18,18 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function() {
+    $('#deploymentScroll').lightSlider({
+        autoWidth:true,
+        loop:true,
+        adaptiveHeight: true,
+        onSliderLoad: function() {
+            $('#deploymentScroll').removeClass('cS-hidden');
+        }
+    });
+});
+
 //
 // // Navigation change on scroll
 // $(document).ready(function(){
