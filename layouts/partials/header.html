@@ -2,7 +2,7 @@
 <header>
   <nav class="navbar theme-dark">
     <div class=" container d-flex  flex-row justify-content-between">
-      <div class="logo">kuber<span class="select">lab</span></div>
+      <div class="logo">Kuber<span class="select">Lab</span></div>
 
       <ul class="theme-dark menu d-flex flex-column flex-md-row justify-content-between" >
         <li>
@@ -15,7 +15,7 @@
           <a class="page-scroll container" href="#resource">{{ with .Site.Params.navigation.recource }}{{ . }}{{ end }}</a>
         </li>
         <li>
-          <a class="page-scroll container" href="{{ .Site.Params.loginUrl }}">{{ with .Site.Params.navigation.login }}{{ . }}{{ end }}</a>
+          <a class="page-scroll container" target="_blank" href="{{ .Site.Params.loginUrl }}">{{ with .Site.Params.navigation.login }}{{ . }}{{ end }}</a>
         </li>
       </ul>
       <button class="btn menu-botton">

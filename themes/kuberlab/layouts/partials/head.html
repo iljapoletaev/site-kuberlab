@@ -2,29 +2,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
   {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
   {{ .Hugo.Generator }}
   <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ "<!-- Stylesheets -->" | safeHTML }}
-  <link href="{{ "css/bootstrap.min.css" | absURL }}" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!--<link href="{{ "css/agency.css" | absURL }}" rel="stylesheet">-->
 
-  <link href="{{ "css/kuberlab.css" | absURL }}" rel="stylesheet">
-  <link href="{{ "css/jquery.form-validator-v2.3.44/theme-default.min.css" | absURL }}" rel="stylesheet">
+  <link href="css/lightslider.css" rel="stylesheet">
+  <link href="css/kuberlab.css" rel="stylesheet">
+  <link href="css/kuberlab-768.css" rel="stylesheet">
+  <link href="css/jquery.form-validator-v2.3.44/theme-default.min.css"  rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
   {{ range .Site.Params.custom_css }}
     <link rel="stylesheet" href="{{ . | absURL }}">
-  {{ end }}
-
-  {{ "<!-- Custom Fonts -->" | safeHTML }}
-  <link href="{{ "font-awesome-v4.7.0/css/font-awesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
-
-  {{ with not .Site.Params.disableFonts }}
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
   {{ end }}
 
   {{ with .Site.Params.favicon }}

@@ -1,0 +1,36 @@
+<div class="modal fade" id="rDemo" tabindex="-1" role="dialog" aria-labelledby="rDemo" aria-hidden="true">
+    <form class="modal-dialog" role="document" method="post" action="{{ .Site.Params.apiUrl}}/site/request">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rModalLabel">Request demo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="rName">Name</label>
+                    <input type="text" class="form-control" id="rName"  name="Name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rEmail">Email address</label>
+                    <input type="email" class="form-control" id="rEmail" aria-describedby="emailHelp" placeholder="Enter email" name="Email" required>
+                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="form-group">
+                    <label for="rPhone">Phone</label>
+                    <input type="phone" class="form-control" id="rPhone" aria-describedby="emailHelp" placeholder="Enter phone" name="Phome">
+                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="form-group">
+                    <label for="rMessage">Message</label>
+                    <textarea type="password" class="form-control" id="rMessage" name="Message"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn ">Send request</button>
+            </div>
+        </div>
+    </form>
+</div>

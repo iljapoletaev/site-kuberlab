@@ -11,6 +11,7 @@ publishDir = "docs"
 
 [params]
     loginUrl = "https://go.kuberlab.io"
+    apiUrl = "https://go.kuberlab.io/api/v0.2"
     [params.navigation]
         home = "Home"
         product = "Product"

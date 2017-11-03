@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-{{ partial "head1.html" . }}
+{{ partial "head.html" . }}
 
 <body id="page-top" class="index">
 {{ partial "header.html" . }}
 {{ partial "home.html" . }}
 {{ partial "dev.html" . }}
 {{ partial "product.html" . }}
-
-<!--{{ partial "development.html" . }}-->
 {{ partial "deployment.html" . }}
-<!--{{ partial "multi-cloud.html" . }}-->
 {{ partial "workflow.html" . }}
 {{ partial "resources.html" . }}
 {{ partial "footer.html" . }}
+{{ partial "request_demo.html" . }}
 {{ partial "js.html" . }}
 </body>
 </html>
