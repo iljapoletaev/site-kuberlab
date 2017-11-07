@@ -14,9 +14,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   
 
+  <link href="css/lightslider.css" rel="stylesheet">
   <link href="css/kuberlab.css" rel="stylesheet">
   <link href="css/kuberlab-768.css" rel="stylesheet">
-  <link href="css/lightslider.css" rel="stylesheet">
   <link href="css/jquery.form-validator-v2.3.44/theme-default.min.css"  rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
@@ -39,7 +39,7 @@
 <header>
   <nav class="navbar theme-dark">
     <div class=" container d-flex  flex-row justify-content-between">
-      <div class="logo">kuber<span class="select">lab</span></div>
+      <div class="logo">Kuber<span class="select">Lab</span></div>
 
       <ul class="theme-dark menu d-flex flex-column flex-md-row justify-content-between" >
         <li>
@@ -52,7 +52,7 @@
           <a class="page-scroll container" href="#resource">Resources</a>
         </li>
         <li>
-          <a class="page-scroll container" href="https://go.kuberlab.io">Log in</a>
+          <a class="page-scroll container" target="_blank" href="https://go.kuberlab.io">Log in</a>
         </li>
       </ul>
       <button class="btn menu-botton">
@@ -70,9 +70,12 @@
     <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between">
         <div class="intro-text col-md-7">
                 <h3>The Foundation for the<br/> <span class="select">Intelligent Enterprise</span></h3>
-                <p>Enterprises are evolving to incorporate artificial intelligence into their business applications. AI brings great power, and many challenges. Kuberlab accelerate AI adoption and help to solve many challenges by introducing a new solution for Enterprise AI application development and deployment.</p>
+                <p>Enterprises are evolving to incorporate artificial intelligence into their business applications. AI brings great power, and many challenges. KuberLab accelerate AI adoption and help to solve many challenges by introducing a new solution for Enterprise AI application development and deployment.</p>
                 <div class="d-flex justify-content-start">
-                    <a href="mailto:info@kuberlab.com"><button  class="btn btn-primary">Request Demo</button></a>
+                    
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rDemo">
+                        Request Demo
+                    </button>
                 </div>
         </div>
         <div class="intro-media d-none d-md-block col-md-5">
@@ -88,14 +91,14 @@
     
     <div class="container d-flex flex-column align-items-md-center">
 
-        <h3>Kuberlab Enables AI Application<br/>
-            <span class="select">Developmentfrom Research to Production</span>
+        <h3>KuberLab Enables AI Application<br/>
+            <span class="select">Development from Research to Production</span>
         </h3>
         <div class="intro-text  d-flex flex-column flex-md-row align-items-baseline align-items-md-top">
 
             <div class="item col-md-4">
                 <div class="img" style="background-image:url(img/dev-1.jpg) "></div>
-                <p>Kuberlab's platform for Enterprise AI development and deployment can be implemented in the cloud or on-premise. This platform contains all the tools and automation required for the AI workflow from inception to operation.</p>
+                <p>KuberLab's platform for Enterprise AI development and deployment can be implemented in the cloud or on-premise. This platform contains all the tools and automation required for the AI workflow from inception to operation.</p>
             </div>
             <div class="item col-md-4">
                 <div class="img" style="background-image:url(img/dev-2.jpg) "></div>
@@ -116,7 +119,7 @@
 <section id="product" class="theme-blue">
     <div class="container">
         <div class="intro-text">
-            
+            <h3>Product</h3>
             <div class="d-flex flex-column">
 
                 <div class="item d-flex flex-column flex-sm-row justify-content-center align-items-center">
@@ -192,8 +195,6 @@
 </section>
 
 
-
-
 <!-- deployment block -->
 
 <section id="deployment">
@@ -260,18 +261,17 @@
             <div class="f-s"></div>
             <div class="stepsPoint d-flex flex-column flex-md-row justify-content-between">
                 <ul class="d-flex flex-wrap flex-row justify-content-between">
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w1"></i> Full support of hybrid cloud</li>
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w2"></i> Access polices</li>
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w3"></i> Resource/application orchesration</li>
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w4"></i> LDAP integration</li>
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w5"></i> Built-in workflow engine</li>
-                    <li class="col-sm-12 col-sm-6 col-md-4"><i class="i-w6"></i> Private repository</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w1"></i> Full support of hybrid cloud</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w2"></i> Access polices</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w3"></i> Resource/application orchesration</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w4"></i> LDAP integration</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w5"></i> Built-in workflow engine</li>
+                    <li class="col-12 col-sm-4 col-md-3"><i class="i-w6"></i> Private repository</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <!-- workflow block -->
@@ -280,7 +280,7 @@
     <div class="container">
         <div class="intro-text d-flex flex-column justify-content-center ">
             <h3>Multi-Cloud Elastic Environment</h3>
-            <p>The Kuberlab Platform deployed in the cloud, connecting the enterprise to clusters in the Public Cloud</p>
+            <p>The KuberLab Platform deployed in the cloud, connecting the enterprise to clusters in the Public Cloud</p>
             <div class="babel">
                 <img class="d-none d-xl-block" src="img/sheme-big.png"/>
                 <img class="d-none d-md-block d-xl-none" src="img/sheme-med.png"/>
@@ -316,7 +316,9 @@
 
 <!-- Footer section -->
 <div class="d-flex justify-content-center">
-  <a href="mailto:info@kuberlab.com"><button  class="btn btn-primary">Request Demo</button></a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rDemo">
+        Request Demo
+    </button>
 </div>
 
 <footer>
@@ -333,6 +335,42 @@
     </div>
 </footer>
 
+<div class="modal fade" id="rDemo" tabindex="-1" role="dialog" aria-labelledby="rDemo" aria-hidden="true">
+    <form class="modal-dialog" role="document" method="post" action="https://go.kuberlab.io/api/v0.2/site/request">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rModalLabel">Request demo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="rName">Name</label>
+                    <input type="text" class="form-control" id="rName"  name="Name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rEmail">Email address</label>
+                    <input type="email" class="form-control" id="rEmail" aria-describedby="emailHelp" placeholder="Enter email" name="Email" required>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="rPhone">Phone</label>
+                    <input type="phone" class="form-control" id="rPhone" aria-describedby="emailHelp" placeholder="Enter phone" name="Phome">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="rMessage">Message</label>
+                    <textarea type="password" class="form-control" id="rMessage" name="Message"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn ">Send request</button>
+            </div>
+        </div>
+    </form>
+</div>
 <!-- jQuery -->
 <script src="js/jquery-v3.3.1/jquery.min.js"></script>
 
