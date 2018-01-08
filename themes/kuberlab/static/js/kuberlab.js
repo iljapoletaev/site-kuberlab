@@ -30,56 +30,23 @@ $(document).ready(function() {
     });
 });
 
-//
-// // Navigation change on scroll
-// $(document).ready(function(){
-//   var maxOffset = 300;
-//   $(window).scroll(function() {
-//     if ($(window).scrollTop() >= maxOffset) {
-//       $('.navbar-default').addClass('navbar-shrink');
-//     }
-//     else {
-//       $('.navbar-default').removeClass('navbar-shrink');
-//     }
-//   });
-// });
-//
-// $(document).ready(function(){
-//   var maxOffset = 300;
-//   if ($(window).scrollTop() >= maxOffset) {
-//     $('.navbar-default').addClass('navbar-shrink');
-//   }
-//   else {
-//     $('.navbar-default').removeClass('navbar-shrink');
-//   }
-// });
-//
-// // Highlight the top nav as scrolling occurs
-// $('body').scrollspy({
-//     target: '.navbar-fixed-top'
-// })
-//
-// // Closes the Responsive Menu on Menu Item Click
-// $('.navbar-collapse ul li a').click(function() {
-//     $('.navbar-toggle:visible').click();
-// });
-//
-// // Async contact form
-// // $('form[id=contactForm]').submit(function(){
-// //   $.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, jqXHR){
-// //     $('form[id=contactForm] #success').hide();
-// //     $('form[id=contactForm] #error').hide();
-// //     if (jqXHR.status == 200) {
-// //       $('form[id=contactForm] #success').show();
-// //     }}, 'json').fail(function(){
-// //       $('form[id=contactForm] #success').hide();
-// //       $('form[id=contactForm] #error').hide();
-// //       $('form[id=contactForm] #error').show();
-// //   });
-// //   return false;
-// // });
-//
-// // Contact form validation
-// $.validate({
-//   modules : 'html5, toggleDisabled'
-// });
+var rec;
+
+
+function recReset() {
+    
+}
+
+
+$('#rDemo').on('show.bs.modal', function (event) {
+    res = grecaptcha.render('r-recaptcha', {
+        'sitekey' : '6LfNuDEUAAAAAAN8mBZCYZXLz0cNimkefrgOvVfj',
+        'callback' : function(res) {
+            debugger;
+            if(res){
+                $('#g-recaptcha-response').val(res);
+                $('#rDateSubmit')[0].disabled = false
+            }
+        }
+    });
+});

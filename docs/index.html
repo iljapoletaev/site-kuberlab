@@ -363,10 +363,14 @@
                     <label for="rMessage">Message</label>
                     <textarea type="password" class="form-control" id="rMessage" name="Message"></textarea>
                 </div>
+                <div class="form-group">
+                    <div id="r-recaptcha"></div>
+                </div>
+                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn ">Send request</button>
+                <button type="submit" class="btn " disabled="true" id="rDateSubmit">Send request</button>
             </div>
         </div>
     </form>
@@ -385,7 +389,7 @@
 
 
 <!-- Custom Theme -->
-<script src="js/kuberlab.js"></script>
+<script src="js/kuberlab.js?2018-01-08%2014%3a14%3a18.989073305%20%2b0300%20MSK%20m%3d%2b1.696577553"></script>
 <script src="js/lightslider.js"></script>
 
 
@@ -393,6 +397,7 @@
 
 
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </body>
 </html>
